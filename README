@@ -43,24 +43,24 @@ add the policy
         {
             "Effect": "Allow",
             "Principal": {
-                "Federated": "arn:aws:iam::6648xxxxx:oidc-provider/oidc.eks.ap-south-1.amazonaws.com/id/B5F325760F6FE1F194517C9DA9399086"
+                "Federated": "arn:aws:iam::6648xxxxx:oidc-provider/oidc.eks.ap-south-1.amazonaws.com/id/B5F325760F6FE1F19"
             },
             "Action": "sts:AssumeRoleWithWebIdentity",
             "Condition": {
                 "StringEquals": {
-                    "oidc.eks.ap-south-1.amazonaws.com/id/B5F325760F6FE1F194517C9DA9399086:sub": "system:serviceaccount:default:s3-echoer"
+                    "oidc.eks.ap-south-1.amazonaws.com/id/B5F325760F6FE1F1:sub": "system:serviceaccount:default:s3-echoer"
                 }
             }
         },
         {
             "Effect": "Allow",
             "Principal": {
-                "Federated": "arn:aws:iam::6648xxxxx:oidc-provider/oidc.eks.ap-south-1.amazonaws.com/id/B5F325760F6FE1F194517C9DA"
+                "Federated": "arn:aws:iam::6648xxxxx:oidc-provider/oidc.eks.ap-south-1.amazonaws.com/id/B5F325760F6FE1F19"
             },
             "Action": "sts:AssumeRoleWithWebIdentity",
             "Condition": {
                 "StringEquals": {
-                    "oidc.eks.ap-south-1.amazonaws.com/id/B5F325760F6FE1F194:sub": "system:serviceaccount:loki:loki-sa"
+                    "oidc.eks.ap-south-1.amazonaws.com/id/B5F325760F:sub": "system:serviceaccount:loki:loki-sa"
                 }
             }
         }
